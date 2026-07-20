@@ -1,5 +1,5 @@
 print("WELCOME TO OUR RESTAURANT")
-print("----------MENU-----------")
+print("----------MENU-----------\n")
 
 cost = 0
 
@@ -21,7 +21,7 @@ def selc():
     elif selection == "4":
         cost += 150
     else:
-        print("Invalid selection, please try again.")
+        print("Invalid selection, please try again.\t")
 
 menu()
 selc()
@@ -31,5 +31,6 @@ while more.upper() == "Y":
     selc()
     more = input("DO YOU WANT ANYTHING ELSE (Y/N): ")
 
+print("\t")
 print("YOUR TOTAL IS:", "₹", cost, "YOUR ORDER WILL BE READY IN 10 MINUTES")
 print("THANK YOU!!")
